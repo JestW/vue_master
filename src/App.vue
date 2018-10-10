@@ -2,9 +2,18 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/about">About</router-link> |
+      <router-link to="/tel">Tel</router-link> |
+      <router-link to="/email">Email</router-link> |
+      <router-link to="/store">Store</router-link> |
+      <router-link to="/argu">Argu</router-link>
     </div>
-    <router-view/>
+    <router-view key="default" />
+    <!--<transition-group>-->
+      <!--<router-view key="default" />-->
+      <!--<router-view key="email" name="email"/>-->
+      <!--<router-view key="tel" name="tel"/>-->
+    <!--</transition-group>-->
   </div>
 </template>
 
